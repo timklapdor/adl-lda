@@ -27,7 +27,8 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "docs",
     },
-    pathPrefix
+    pathPrefix: "/adl-lda/"
+
   }
 };
 
