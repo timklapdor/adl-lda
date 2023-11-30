@@ -11,16 +11,16 @@ layout: default
       <a href="{{ post.url | url }}">{{post.data.title}}</a> 
       
       {% for item in post.data.theme %}
-      <span class="px-4 py-1 rounded-full text-white bg-pink-500 font-semibold text-xs flex align-center w-max ">{{ item }}</span>
+      <span class="inline-flex items-center justify-center text-xs px-3 py-1 bg-violet-200 text-violet-800 rounded-md">{{ item }}</span>
        {% endfor %}
        {% for item in post.data.stage %}
-       <span class="px-4 py-1 rounded-full text-white bg-blue-500 font-semibold text-xs flex align-center w-max ">{{ item }}</span>
+       <span class="inline-flex items-center justify-center text-xs px-3 py-1 bg-emerald-300 text-emerald-800 rounded-md">{{ item }}</span>
       {% endfor %}
       {% for item in post.data.learningTypes %}
-       <span class="px-4 py-1 rounded-full text-white bg-green-500 font-semibold text-xs flex align-center w-max ">{{ item }} </span>
+       <span class="inline-flex items-center justify-center text-xs px-3 py-1 bg-blue-200 text-blue-800 rounded-md ">{{ item }} </span>
       {% endfor %}
       {% for item in post.data.scale %}
-      <span class="px-4 py-1 rounded-full text-white bg-orange-500 font-semibold text-xs flex align-center w-max ">{{ item }} </span>
+      <span class="inline-flex items-center justify-center text-xs px-3 py-1 bg-amber-200 text-amber-800 rounded-md">{{ item }} </span>
      {% endfor %}
       </li>
     {% endfor %}
