@@ -5,11 +5,11 @@
   "scripts": {
     "start": "run-p start:*",
     "start:eleventy": "eleventy --serve",
-    "start:postcss": "postcss src/styles/*.css --dir _site --watch",
+    "start:postcss": "postcss src/styles/*.css --dir docs --watch",
     "build": "run-s clean build:eleventy build:postcss",
     "build:eleventy": "cross-env ELEVENTY_PRODUCTION=true eleventy",
-    "build:postcss": "cross-env NODE_ENV=production postcss src/styles/*.css --dir _site",
-    "clean": "rimraf _site"
+    "build:postcss": "cross-env NODE_ENV=production postcss src/styles/*.css --dir docs",
+    "clean": "rimraf docs"
   },
   "repository": {
     "type": "git",

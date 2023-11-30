@@ -8,7 +8,7 @@ layout: default
     {% for post in collections.lessons %}
     <li>
       
-      <a href="{{post.url}}">{{post.data.title}}</a> 
+      <a href="{{ post.url | url }}">{{post.data.title}}</a> 
       
       {% for item in post.data.theme %}
       <span class="px-4 py-1 rounded-full text-white bg-pink-500 font-semibold text-xs flex align-center w-max ">{{ item }}</span>

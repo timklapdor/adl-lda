@@ -1,7 +1,12 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
 
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
 
   eleventyConfig.addCollection("Testing", function(collection) {
     return collection.getFilteredByGlob("/lessons/*.md");
