@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+  <main class="">
+
+    <h1>{{ title }}</h1>
+
+    <div class="tags">
+        {% for item in theme %}
+            <span class="px-4 py-1 rounded-full text-white bg-pink-500 font-semibold text-xs flex align-center w-max ">{{ item }}</span>
+        {% endfor %}
+
+        {% for item in stage %}
+            <span class="px-4 py-1 rounded-full text-white bg-blue-500 font-semibold text-xs flex align-center w-max ">{{ item }}</span>
+        {% endfor %}
+
+        {% for item in learningTypes %}
+            <span class="px-4 py-1 rounded-full text-white bg-green-500 font-semibold text-xs flex align-center w-max ">{{ item }} </span>
+        {% endfor %}
+
+        {% for item in scale %}
+            <span class="px-4 py-1 rounded-full text-white bg-orange-500 font-semibold text-xs flex align-center w-max ">{{ item }} </span>
+        {% endfor %}
+     </div>
+
+    {{ content | safe }}
+ 
+ 
+  </main>

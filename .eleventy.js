@@ -3,6 +3,10 @@ const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addCollection("Testing", function(collection) {
+    return collection.getFilteredByGlob("/lessons/*.md");
+});
+
   if (process.env.ELEVENTY_PRODUCTION) {
     eleventyConfig.addTransform("htmlmin", htmlminTransform);
   }

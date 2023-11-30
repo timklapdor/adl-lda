@@ -3,3 +3,90 @@
 @tailwind components;
 
 @tailwind utilities;
+
+main {
+    margin-inline: auto;
+    max-width: 75ch;
+    padding: 2ch;
+
+    & > * + * {
+        margin-block-start: 1.5rem;
+    }
+
+    h1 {
+        text-transform: capitalize;
+    }
+}
+
+h1, h2, h3, p, li  {
+    font-size: clamp(var(--fluid-type-min, 1rem), calc(1rem + var(--fluid-type-target, 3vw)),var(--fluid-type-max, 1.3rem));
+}
+
+
+h1 {
+    --fluid-type-min: 2.5rem;
+    --fluid-type-max: 6rem;
+    --fluid-type-target: 5vw;   
+    max-width: 15ch;
+    line-height: 1;
+  }
+  
+  h2 {
+    --fluid-type-min: 1.8rem;
+    --fluid-type-max: 3rem;
+  }
+  
+  h3 {
+    --fluid-type-min: 1.5rem;
+    --fluid-type-max: 2.5rem;
+  }
+  
+  h2,
+  h3 {
+    max-width: 30ch;
+  }
+  
+  ul {
+    margin-inline-start: 4ch;
+    li {
+        list-style-type: disc;
+    }
+
+    li + li {
+        margin-top: 1ch;
+        padding-top: 1ch;
+    }
+  }
+
+  .tags {
+    display: flex;
+
+    > * {
+        margin: .2ch;
+    }
+  }
+
+  a {
+    color: #22c55e;
+  }
+
+  ul.archive {
+    max-width: 100%;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      gap: .2ch;
+      flex-wrap: wrap;
+
+      & a {
+        width: 100%;
+        flex-basis: auto;
+      }
+
+      & span {
+        flex-basis: 0;
+      }
+
+    }
+  }
