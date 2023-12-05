@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<main class="container mx-auto flex flex-col flex-wrap items-center px-6">
+
+  <h3>Themes of Lessons</h3>
+
+  <ul class="archive">
+    {% for post in collections.lessons %}
+    {% if post.data.theme == 'Assessment' %}
+    <li>
+   
+      <a href="{{ post.url | url }}">{{post.data.title}}</a> 
+     </li>
+      {% endif %}
+
+      {% if post.data.theme == 'Course Design' %}
+      <li>
+        <a href="{{ post.url | url }}">{{post.data.title}}</a> 
+       </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+
+</main>

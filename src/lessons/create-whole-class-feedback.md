@@ -9,7 +9,7 @@ theme:
 stage: 
     - Deliver # Refine, Evaluate, Deliver, Prepare, Review, Build, Develop, Design, Discover
 scale: 
-    - Assessment # What level is this relevant to - Program, Praxis, Course, Assessment, Module, Lesson, Activity, Resource
+    - Assessment Task # What level is this relevant to - Program, Praxis, Course, Assessment, Module, Lesson, Activity, Resource
 learningTypes: 
     - Evaluative
     - Assimilative # , Investigative, Discursive, Formative, Productive, Evaluative, Social

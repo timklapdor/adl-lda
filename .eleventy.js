@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
     pathPrefix = process.env.GITHUB_REPOSITORY.split('/')[1];
   }
 
+
   return {
     dir: {
       input: "src",
